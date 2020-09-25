@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width inicial-scale=1.0 target-dense-dpi=device-dpi">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Form Page</title>
+</head>
+
+
+<body>
+    <main>
+        <div class="wrap">
+
+            <h1 id="title"> Survey Form</h1>
+            <p id="description">Thank you for taking your time and help us to improve our product.
+            </p>
+
+            <form id="survey-form">
+                <ol>
+                    <li>
+                        <div class="row">
+
+                            <label for="name-label">Name: </label>
+                            <input type="text" required id="name-label" name="name-label" placeholder="Enter your Name">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+
+                            <label for="tel-label">Telephone number: </label>
+                            <input type="tel" required id="tel-label" name="tel-label" placeholder="Enter your number">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <label for="email-label">Email: </label>
+                            <input type="email" required id="email-label" name="email-label" placeholder="Enter your Email">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+
+                            <label for="number-label"> Age:</label>
+                            <input type="number" required id="number-label" name="number-label" placeholder="Enter your Age" min="10" max="80">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <label for="job-label">Current occupation? </label>
+                            <input type="text" required id="job-label" name="job" placeholder="Enter Current Occupation">
+
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row">
+                            <div class="check">
+
+                                <p>Would you recommend &quot; Sweets by Polly &quot; to a friend?</p>
+
+
+                                <label for="definitely"> 
+                                        <input type="radio" checked id="definitely" name="recommend" value="definitely"> Definitely
+                                    </label>
+
+                                <label for="maybe">
+                                        <input type="radio" id="maybe" name="recommend" value="maybe"> Maybe
+                                    </label>
+
+                                <label for="not-sure">
+                                        <input type="radio" id="not-sure" name="recommend" value="not-sure"> Not sure
+                                    </label>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+
+                        <div class="row">
+                            <div class="choose">
+                                <p>What is your favorite product of &quot; Sweets by Polly &quot;?
+                                </p>
+                                <select name="dropdown" id="dropdown" onchange="optionSelected()">
+                                        <option value="" Selected="Selected">Select an option </option>
+                                        <option value="scakes">Simple Cakes</option>
+                                        <option value="dcakes">Decorated Cakes</option>
+                                        <option value="party-box">Party in the Box</option>
+                                        <option value="candies">Small Treats</option>
+                                        <option value="savory">Savory Options</option>
+                                    </select>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row">
+                            <div class="check">
+                                <p> What would you like to see more ?</p>
+                                <label>
+                                    <input type="checkbox" 
+                                    checked  
+                                    name="Simplest" 
+                                    value="Simplest">
+                                    Simplest Options
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" 
+                                    name="birthday-wedding-cake" 
+                                    value="birthday-wedding-cake">
+                                    Birthday and Wedding Cakes 
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" 
+                                    name="sugar-free" 
+                                    value="sugar-free ">
+                                    Sugar Free  
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" 
+                                    name="gluten-free" 
+                                    value="gluten-free"> 
+                                    Gluten Free 
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" 
+                                    name="savory-options" 
+                                    value="savory-options">
+                                    Savory Products 
+                                </label>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="msg">
+
+                                <label for="suggestion"> Any comments or suggestion?</label>
+                                <br>
+                                <textarea id="suggestion" name="suggestion" placeholder="Please enter your comment here..."></textarea>
+
+
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="row">
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+
+
+
+
+
+            </form>
+
+        </div>
+    </main>
+</body>
+
+</html>
