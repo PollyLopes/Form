@@ -39,6 +39,13 @@ body {
     padding: 1% 5%;
 }
 
+@media only screen and (max-width: 600px) {
+    .wrap {
+        border-radius: 5px;
+        
+    }
+}
+
 #survey-form {
     display: flex;
     flex-direction: column;
