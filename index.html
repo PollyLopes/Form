@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width inicial-scale=1.0 target-dense-dpi=device-dpi">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Form Page</title>
 </head>
 
@@ -21,30 +21,30 @@
             <form id="survey-form">
                 <ol>
                     <li>
-                        <div class="row">
+                        <div class="row" >
 
-                            <label for="name-label">Name: </label>
-                            <input type="text" required id="name-label" name="name-label" placeholder="Enter your Name">
+                            <label id="name-label"  for="name">Name: </label>
+                            <input id="name" type="text" required name="name" placeholder="Enter your Name">
                         </div>
                     </li>
                     <li>
                         <div class="row">
 
-                            <label for="tel-label">Telephone number: </label>
-                            <input type="tel" required id="tel-label" name="tel-label" placeholder="Enter your number">
+                            <label id="tel-label" for="tel">Telephone number: </label>
+                            <input type="tel" required id="tel" name="tel" placeholder="Enter your number">
                         </div>
                     </li>
                     <li>
                         <div class="row">
-                            <label for="email-label">Email: </label>
-                            <input type="email" required id="email-label" name="email-label" placeholder="Enter your Email">
+                            <label id="email-label" for="email">Email: </label>
+                            <input id="email"  type="email" required name="email" placeholder="Enter your Email">
                         </div>
                     </li>
                     <li>
                         <div class="row">
 
-                            <label for="number-label"> Age:</label>
-                            <input type="number" required id="number-label" name="number-label" placeholder="Enter your Age" min="10" max="80">
+                            <label id="number-label" for="number"> Age:</label>
+                            <input id="number"  type="number" required name="number" placeholder="Enter your Age" min="10" max="80">
                         </div>
                     </li>
                     <li>
@@ -155,7 +155,7 @@
                 </ol>
 
                 <div class="row">
-                    <input type="submit" value="Submit" class="btn">
+                    <input id="submit" type="submit" value="Submit" class="btn">
                 </div>
 
 
